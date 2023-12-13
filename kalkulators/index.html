@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <table>
+        <tr>
+          <td colspan="3"><input type="text" disabled="disabled" id="display" class="screen" style="text-align: right;"/></td>
+          <td><button class="clear" onclick="clearDisplay()">c</button></td>
+        </tr>
+      </table>
+      <div class="keys">
+        <button onclick="getNumber(7)">7</button>
+        <button onclick="getNumber(8)">8</button>
+        <button onclick="getNumber(9)">9</button>
+        <button onclick="getOperator('/')">/</button>
+
+        <button onclick="getNumber(4)">4</button>
+        <button onclick="getNumber(5)">5</button>
+        <button onclick="getNumber(6)">6</button>
+        <button onclick="getOperator('*')">*</button>
+
+        <button onclick="getNumber(1)">1</button>
+        <button onclick="getNumber(2)">2</button>
+        <button onclick="getNumber(3)">3</button>
+        <button onclick="getOperator('+')">+</button>
+        
+        <button onclick="getNumber(0)">0</button>
+        <button></button>
+        <button onclick="calculateResult()">=</button>
+        <button onclick="getOperator('-')">-</button>
+      </div>
+    </div>
+    <script src="calc.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--         <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="operator" data-action="divide">÷</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="operator" data-action="subtract">-</button>
+        <button onclick="display('1')">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="operator" data-action="multiply">*</button>
+        <button>0</button>
+        <button class="dot" data-action="decimal">.</button>
+        <button class="operator"data-action="calculate">=</button>
+        <button class="operator" data-action="add">+</button>
+      </div> -->
